@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "column",
+    "name": "Get image from email",
+    "description": "Get Gravatar image from an email",
+    "author": "Thinh Dinh <thinh@lowcode.agency>",
+    "params": [
+      {
+        "name": "email",
+        "displayName": "Email",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
