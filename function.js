@@ -6,7 +6,7 @@ window.function = function (who, role, what, when, why) {
     when = when.value ?? "";
     why = why.value ?? "";
     
-    if (who = "" || role = '") {
+    if (who == "" || role == "") {
         return "";
     }
     
