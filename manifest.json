@@ -1,13 +1,33 @@
 [
   {
     "kind": "column",
-    "name": "Get image from email",
-    "description": "Get Gravatar image from an email",
+    "name": "Generate feedback sentence from who, what, when, why input",
+    "description": "",
     "author": "Thinh Dinh <thinh@lowcode.agency>",
     "params": [
       {
-        "name": "email",
-        "displayName": "Email",
+        "name": "who",
+        "displayName": "Who",
+        "type": "string"
+      },
+      {
+        "name": "role",
+        "displayName": "Role",
+        "type": "string"
+      },
+      {
+        "name": "what",
+        "displayName": "what",
+        "type": "string"
+      },
+      {
+        "name": "when",
+        "displayName": "When",
+        "type": "string"
+      },
+      {
+        "name": "why",
+        "displayName": "Why",
         "type": "string"
       }
     ],
