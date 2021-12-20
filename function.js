@@ -21,7 +21,7 @@ window.function = function (who, role, what, when, why) {
     }
     
     if (why != "")  {
-        why_text + "in order to " + why;
+        why_text = "in order to " + why;
     }
     
     let res = [who_text, what_text, when_text, why_text].filter(Boolean).join(", ");
