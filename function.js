@@ -17,11 +17,11 @@ window.function = function (who, role, what, when, why) {
     let why_text = "";
     
     if (when != "") {
-        when_text = "so that whenever the user " + when;
+        when_text = "so that whenever users " + when;
     }
     
     if (why != "")  {
-        why_text = "in order to " + why;
+        why_text = "they " + why;
     }
     
     let res = [who_text, what_text, when_text, why_text].filter(Boolean).join(", ");
