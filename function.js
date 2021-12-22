@@ -17,7 +17,7 @@ window.function = function (who, role, what, when, why) {
     let why_text = "";
     
     if (when != "") {
-        when_text = "so that whenever users " + when;
+        when_text = "so that the user can " + when;
     }
     
     if (why != "")  {
