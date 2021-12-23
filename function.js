@@ -20,8 +20,12 @@ window.function = function (who, role, what, when, why) {
         when_text = "whenever the users " + when;
     }
     
-    if (why != "")  {
+    if (when != "" && why != "")  {
         why_text = "they " + why;
+    }
+        
+    if (when == "" && why != "") {
+        why_text = "in order to " +why;
     }
     
     let res = [who_text, what_text, when_text, why_text].filter(Boolean).join(", ");
