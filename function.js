@@ -19,12 +19,8 @@ window.function = function (who, role, what, when, why) {
     if (when != "") {
         when_text = "whenever " + when;
     }
-    
-    if (when != "" && why != "")  {
-        why_text = "they " + why;
-    }
         
-    if (when == "" && why != "") {
+    if (why != "") {
         why_text = "in order to " +why;
     }
     
