@@ -12,7 +12,7 @@ window.function = function (who, role, what, when, why) {
     
     else {
     let who_text = who + ", " + role;
-    let what_text = "who wants " + what;
+    let what_text = "wants " + what;
     let when_text = "";
     let why_text = "";
     
