@@ -12,12 +12,12 @@ window.function = function (who, role, what, when, why) {
     
     else {
     let who_text = who + ", " + role;
-    let what_text = "wants to have " + what;
+    let what_text = "who wants " + what;
     let when_text = "";
     let why_text = "";
     
     if (when != "") {
-        when_text = "whenever the users " + when;
+        when_text = "whenever " + when;
     }
     
     if (when != "" && why != "")  {
