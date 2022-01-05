@@ -11,10 +11,15 @@ window.function = function (who, role, what, when, why) {
     }
     
     else {
+        
     if (role == "") {
     let whowhat_text = who + " wants " + what;
-    } else whowhat_text = who + ", " + role + ", wants " + what;
     }
+    
+    if (role != "") {
+        whowhat_text = who + ", " + role + ", wants " + what;
+    }
+ 
     let when_text = "";
     let why_text = "";
     
