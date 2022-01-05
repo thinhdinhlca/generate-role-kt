@@ -1,41 +1,24 @@
-window.function = function (who, role, what, when, why) {
-
-    who = who.value ?? "";
-    role = role.value ?? "";
-    what = what.value ?? "";
-    when = when.value ?? "";
-    why = why.value ?? "";
+window.function = function (role) {
     
-    if (who == "" || role == "") {
+    role = role.value ?? "";
+    
+    if (typeof role == "undefined") {
         return "";
     }
     
     else {
-    
-    let whowhat_text = "";
+        let check = role.charAt(0).toLowerCase();
+        let res = role.charAt(0).toLowerCase() + role.slice(1);
         
-    if (role.length == 0) {
-        whowhat_text = who + " wants " + what;
-    }
-    
-    if (role.length > 0) {
-        whowhat_text = who + ", " + role + ", wants " + what;
-    }
- 
-    let when_text = "";
-    let why_text = "";
-    
-    if (when != "") {
-        when_text = "whenever " + when;
-    }
+        if (check == "a" || check == "e" || check == "i" || check == "o" || check == "u") {
+            
+            return "an " + res;
+        }
         
-    if (why != "") {
-        why_text = "in order to " +why;
+        else {
+            return "a " + res;
+        
+        }
     }
-    
-    let res = [whowhat_text, when_text, why_text].filter(Boolean).join(", ");
-    
-    return res + ".";
-    }
-   
+}
 }
