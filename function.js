@@ -14,11 +14,11 @@ window.function = function (who, role, what, when, why) {
     
     let whowhat_text = "";
         
-    if (role == "") {
+    if (role.length == 0) {
         whowhat_text = who + " wants " + what;
     }
     
-    if (role != "") {
+    if (role.length > 0) {
         whowhat_text = who + ", " + role + ", wants " + what;
     }
  
