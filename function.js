@@ -17,8 +17,6 @@ window.function = function (role) {
         
         else {
             return "a " + res;
-        
         }
     }
-}
 }
