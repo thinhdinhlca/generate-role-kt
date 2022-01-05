@@ -2,7 +2,7 @@ window.function = function (role) {
     
     role = role.value ?? "";
     
-    if (typeof role == "undefined") {
+    if (role == "") {
         return "";
     }
     
