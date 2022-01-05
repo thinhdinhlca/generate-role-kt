@@ -11,8 +11,10 @@ window.function = function (who, role, what, when, why) {
     }
     
     else {
-    let who_text = who + ", " + role;
-    let what_text = "wants " + what;
+    if (role == "") {
+    let whowhat_text = who + " wants " + what;
+    } else whowhat_text = who + ", " + role + ", wants " + what;
+    }
     let when_text = "";
     let why_text = "";
     
@@ -24,7 +26,7 @@ window.function = function (who, role, what, when, why) {
         why_text = "in order to " +why;
     }
     
-    let res = [who_text, what_text, when_text, why_text].filter(Boolean).join(", ");
+    let res = [whowhat_text, when_text, why_text].filter(Boolean).join(", ");
     
     return res + ".";
     }
